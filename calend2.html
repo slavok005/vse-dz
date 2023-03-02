@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .calendar {
+        width: 300px;
+    }
+
+    .calendar__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .calendar__items{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    
+
+    .calendar__item {
+
+        width: calc(100% / 7);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calendar__item4{
+        width: calc(100% / 7);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(118, 118, 136, 0.603) 0px 30px 60px -12px inset, rgba(216, 186, 186, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    .calendar__item5{
+        width: calc(100% / 7);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white ;
+    }
+    .calendar__item5{
+        width: calc(100% / 7);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px inset, rgba(247, 244, 244, 0.3) 0px 18px 36px -18px inset;
+
+    }
+        .calendar__action1{  
+        color:rgb(240, 234, 234) ;        
+    }
+    
+    .calendar__action1{
+       
+        box-shadow: rgb(0, 0, 0) 0px 30px 60px -12px inset, rgba(247, 244, 244, 0.3) 0px 18px 36px -18px inset;
+
+    }
+    .calendar__item{
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+    .calendar__action1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .calendar__action{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="calendar">
+        <div class="calendar__header">
+            <div class="calendar__nav">
+                <button class="calendar__button">
+                    <i class="las la-angle-double-right"></i>
+                    <i class="las la-angle-double-left"></i>
+                </button>
+
+                <button class="calendar__button">
+                    <i class="las la-angle-left"></i>
+                    
+                </button>
+            </div>
+
+            <h3 class="calendar__title">
+                February 2023
+            </h3>
+
+            <div class="calendar__nav">
+                <button class="calendar__button">
+                    <i class="las la-angle-right"></i>
+                </button>
+
+                <button class="calendar__button">
+                    <i class="las la-angle-double-right"></i>
+                </button>
+            </div>
+        </div>
+        
+
+        <ul class="calendar__items">
+            <li class="calendar__item">Mo</li>
+            <li class="calendar__item">Tu</li>
+            <li class="calendar__item">We</li>
+            <li class="calendar__item4">Th</li>
+            <li class="calendar__item">Fr</li>
+            <li class="calendar__item">Sa</li>
+            <li class="calendar__item">Su</li>
+            <li class="calendar__item4">1</li>
+            <li class="calendar__item">2</li>
+            <li class="calendar__item">3</li>
+            <li class="calendar__item">4</li>
+            <li class="calendar__item">5</li>
+            <li class="calendar__item">6</li>
+            <li class="calendar__item">7</li>
+            <li class="calendar__item">8</li>
+            <li class="calendar__item">9</li>
+            <li class="calendar__item">10</li>
+            <li class="calendar__item5">11</li>
+            <li class="calendar__item">12</li>
+            <li class="calendar__item">13</li>
+            <li class="calendar__item">14</li>
+            <li class="calendar__item">15</li>
+            <li class="calendar__item">16</li>
+            <li class="calendar__item">17</li>
+            <li class="calendar__item">18</li>
+            <li class="calendar__item">19</li>
+            <li class="calendar__item">20</li>
+            <li class="calendar__item">21</li>
+            <li class="calendar__item">22</li>
+            <li class="calendar__item">23</li>
+            <li class="calendar__item">24</li>
+            <li class="calendar__item">25</li>
+            <li class="calendar__item">26</li>
+            <li class="calendar__item">27</li>
+            <li class="calendar__item">28</li>
+            <li class="calendar__item">29</li>
+            <li class="calendar__item">30</li>
+            <li class="calendar__item">31</li>
+            <div class="calendar__actions">
+                <button class="calendar__action">
+                    Cancel
+                </button>
+    
+                <button class="calendar__action1">
+                    Apply
+                </button>
+            
+        </ul>
+
+       
+    </div>
+
+</body>
+
+</html>
+
+<body>
