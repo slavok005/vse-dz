@@ -6,44 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sait</title>
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <i class="las la-campground"></i>
-        
-        
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
-        
-        :root {
-            --color-grey: #f6f6f6;
-        }
+
 
         * {
-            margin: 0;
-            padding: 0;
+            margin: 10px;
+            padding: 0px;
         }
 
         body {
             font-family: 'Robot', sans-serif;
             display: flex;
             justify-content: center;
-        }
 
-        row {
+        }
+      
+        .row {
             display: flex;
-            gap: 40px
+            gap: 60px
+            
+        }
+        .row1 {
+            display: flex;
+            gap: 60px 
         }
 
-        .row__small-item {
-            flex: 1
-        }
-
+        
         .icon {
+
             background: var(--color grey);
+
         }
 
         main {
             width: 800px;
+            display: flex;
+            justify-content: center;
         }
+
+        .icon {
+            box-shadow: rgba(248, 248, 248, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            border-radius: 8px;
+
+        }
+        .row__item1{
+            border-radius: 8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        .las la-sign-out-alt{
+            color: red;
+        }
+       
     </style>
 </head>
 
@@ -54,49 +72,100 @@
 
             <div class="row">
                 <div class="row__small-item">
-                </div>
-                    <span class="Icon">
-                        <i class="Las la-crow"></i>
+                    <span class="icon"> <i class="las la-campground"></i>
                     </span>
-                    <h4>Text...</h4>
+
+                    <h4 class="Text">
+                        400+ Components
+                    </h4>
+
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel amet rem id. Laboriosam
-                        optio ducimus veniam accusantium voluptates facere consequatur. Ex odio cum dolores aliquam
-                        dolorum cupiditate, labore atque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus rem iure, blanditiis
+                        laudantium consectetur?
+
+
                     </p>
+
+                </div>
+                <div class="row">
+                    <div class="row__small-item">
+                        <span class="icon">
+                            <i class="las la-campground"></i>
+                        </span>
+
+                        <h4 class="Text">
+                            layout samples
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus rem iure,
+                            blanditiis laudantium consectetur?
+
+                        </p>
+
+                    </div>
+                    <div class="row">
+                        <div class="row__small-item">
+                            <span class="icon">
+                                <i class="las la-campground"></i>
+
+                            </span>
+
+                            <h4 class="Text">
+                                Lifetime access
+                            </h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloribus rem iure,
+                                blanditiis laudantium consectetur?
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row1">
+                <div class="row__item1">
+
+                    <h3>Less clutter, mory flexibility</h3>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, vel?</p>
+                    
+
+                    <figure>
+                        <i class="las la-mountain">View profile</i>
+                        <p></p>
+                        <i class="las la-dog">Invite members</i>
+                        
+                        <p></p>
+                        <i class="las la-binoculars">Join slack community</i>
+                        <p></p>
+                        <i class="lar la-keyboard">Keyboard shortcuts</i>
+                        <p>
+                        </p>
+                        <i class="las la-cog">Setting</i>
+                        <p></p>
+                        <i class="las la-sign-out-alt">log out</i>
+                    </figure>
+                </div>
+                <div class="row2">
+                    <div class="row__item2">
+                        <h3>Less clutter, mory flexibility</h3>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, vel?
+
+                        </p>
+                        <figure>
+                            <img src="">
+                        </figure>
+                    </div>
                 </div>
 
-                <span class="Icon">
-                    <i class="Las la-crow"></i>
-                </span>
-                <h4>Text...</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel amet rem id. Laboriosam optio
-                    ducimus veniam accusantium voluptates facere consequatur. Ex odio cum dolores aliquam dolorum
-                    cupiditate, labore atque?
-                </p>
-            </div>
 
-            <span class="Icon">
-                <i class="Las la-crow"></i>
-            </span>
-            <h4>Text...</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel amet rem id. Laboriosam optio
-                ducimus veniam accusantium voluptates facere consequatur. Ex odio cum dolores aliquam dolorum
-                cupiditate, labore atque?
-            </p>
-            <div class="row__small-itemh">
-                <h3>Subtitle</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, similique iste excepturi eligendi
-                    consequatur numquam ut deleniti pariatur, veniam suscipit error ex exercitationem quod, aut culpa
-                    perspiciatis voluptatibus saepe optio.
-                </p>
-                <figure></figure>
-            </div>
-            </div>
-            </div>
+
         </section>
     </main>
 
