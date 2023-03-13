@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root{
+            --sidebar-widht: 200PX;
+        }
+        aside {
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: gold;
+            transform: translateX(calc(var(--sidebar-widht)* -1));
+            transition: .5s;
+           
+        }
+
+        .is-open {
+         transform: translateX(0);
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const sidebar = document.querySelector('.siderbar');
+            sidebar.classList.toggle('is-open');
+        }
+    </script>
+</head>
+
+<body>
+
+    <aside class="sidebar"></aside>
+
+    <main>
+        <div>
+
+            <h1>
+                Abaut company
+            </h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, consequatur velit placeat explicabo
+                nam
+                repudiandae optio quidem ut libero distinctio, inventore eaque id beatae? Beatae velit delectus quidem
+                est
+                modi!
+            </p>
+            <button onclick="toggleMenu()">Menu</button>
+        </div>
+    </main>
+</body>
+
+</html>
